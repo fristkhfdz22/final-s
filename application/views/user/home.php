@@ -1,5 +1,5 @@
 
- <div class="home">
+<div class="home">
 <div class="marquee-section" style="margin-top: 60px;">
     <marquee behavior="scroll" direction="left" class="marquee-text" style="line-height: 50px;">
         <span class="marquee-text">Welcome to Our School Website | Stay Informed with the Latest Updates!</span>

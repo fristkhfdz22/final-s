@@ -73,6 +73,8 @@ $route['kontak/add'] = 'kontak/add';
 $route['kontak/save'] = 'kontak/save';
 $route['user'] = 'user/index'; 
 $route['kritiksaran/submit'] = 'kritiksaran/submit';
+$route['kritiksaran'] = 'kritiksaran/index';
+
 $route['admin/kritiksaran'] = 'kritiksaran/list'; 
 $route['user/kepsek/detail'] = 'Kepsekdetail/index';
 $route['berita/detail'] = 'beritadetail/index/';

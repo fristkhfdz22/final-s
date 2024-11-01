@@ -53,7 +53,7 @@
                                     </li>
 
                                     <li><a class="dropdown-item" href="<?= base_url('sejarah-user'); ?>">Sejarah</a></li>
-                                    <li><a class="dropdown-item" href="<?= base_url('visimisi'); ?>">Visi & Misi</a></li>
+                                    <li><a class="dropdown-item" href="<?= base_url('kritiksaran'); ?>">Kritik & Saran</a></li>
                                     <li><a class="dropdown-item" href="<?= base_url('gurustaff/detail/'); ?>">Guru dan Staff</a></li>
                                 </ul>
                         </li>
@@ -84,7 +84,7 @@
                         </li>
                         <li class="nav-item">
                             <div class="tombol">
-                                <a class="nav-link smooth-menu" href="<?= base_url('visimisi'); ?>" style="color: black;">Visi&Misi</a>
+                                <a class="nav-link smooth-menu" href="<?= base_url('kritiksaran'); ?>" style="color: black;">Kritik&saran</a>
                         </li>
                         <li class="nav-item">
                             <div class="tombol">
