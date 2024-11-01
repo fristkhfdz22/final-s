@@ -24,28 +24,39 @@
             width: fit-content;
             margin: 20px auto;
         }
+
         .daftar-nama {
-              list-style: none; /* Menghilangkan bullet default */
-              padding-left: 0;
-              margin-left: 5%;
-          }
-        
-          .daftar-nama li {
-              position: relative;
-              padding-left: 25px; /* Menambahkan ruang di kiri untuk bullet */
-              line-height: 1.5; /* Menambah jarak antar baris */
-          }
-        
-          .daftar-nama li::before {
-              content: '•'; /* Bullet custom */
-              position: absolute;
-              left: 0; /* Posisi bullet di kiri */
-              top: 50%; /* Letakkan di tengah vertikal */
-              transform: translateY(-50%); /* Untuk memastikan bullet berada tepat di tengah */
-              color: white; /* Warna bullet putih */
-              font-size: 1.5rem; /* Ukuran bullet */
-              vertical-align: middle; /* Bullet sejajar vertikal dengan teks */
-          }
+            list-style: none;
+            /* Menghilangkan bullet default */
+            padding-left: 0;
+            margin-left: 5%;
+        }
+
+        .daftar-nama li {
+            position: relative;
+            padding-left: 25px;
+            /* Menambahkan ruang di kiri untuk bullet */
+            line-height: 1.5;
+            /* Menambah jarak antar baris */
+        }
+
+        .daftar-nama li::before {
+            content: '•';
+            /* Bullet custom */
+            position: absolute;
+            left: 0;
+            /* Posisi bullet di kiri */
+            top: 50%;
+            /* Letakkan di tengah vertikal */
+            transform: translateY(-50%);
+            /* Untuk memastikan bullet berada tepat di tengah */
+            color: white;
+            /* Warna bullet putih */
+            font-size: 1.5rem;
+            /* Ukuran bullet */
+            vertical-align: middle;
+            /* Bullet sejajar vertikal dengan teks */
+        }
     </style>
     <?php foreach ($sejarah as $item): ?>
         <?php if ($item['gambar']): ?>
@@ -62,10 +73,10 @@
         </div>
         <br>
         <div class="isisambutan" style="color: white; font-size: 20px;">
-            <?= $item['konten']; ?>
+            <p><?= $item['konten']; ?></p>
         <?php endforeach; ?>
 
-  
+
 
         </div>
 
