@@ -30,9 +30,8 @@
                 <img src="<?= base_url('uploads/galeri/' . $item->img); ?>" alt="<?= $item->judul; ?>">
                 <div class="overlay">
                     <h2><?= $item->judul; ?></h2>
-                    <p><?= $item->deskripsi; ?></p>
-                    <a href="<?= site_url('galeri/view/' . $item->id); ?>">View detail</a>
-                </div>
+                    <p style="font-size: 15px;"><?= $item->deskripsi; ?></p>
+                                </div>
             </div>
         <?php endforeach; ?>
     </div>

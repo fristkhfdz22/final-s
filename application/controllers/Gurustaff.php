@@ -75,7 +75,7 @@ class Gurustaff extends CI_Controller {
                 $data['gambar'] = $upload_data['file_name'];
             } else {
                 $error = $this->upload->display_errors();
-                echo $error; /
+                echo $error; 
                 return;
             }
         }

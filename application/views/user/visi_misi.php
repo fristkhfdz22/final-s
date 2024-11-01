@@ -27,7 +27,7 @@
     <div class="isisambutan">
         <h2 style="margin-right: 90%; color: white;">Visi</h2>
         <br>
-        <p style="margin-left: 5%;"><?= $visi_misi[0]['visi']; ?></p>
+        <p style="margin-left: 5%; font-size: 20px;"><?= $visi_misi[0]['visi']; ?></p>
         <h2 style="margin-right: 90%; color: white;">Misi</h2>
         <br>
         <style>
@@ -54,7 +54,7 @@
                 vertical-align: middle;
             }
         </style>
-        <ul class="daftar-nama">
+        <ul class="daftar-nama" style="font-size: 20px;">
             <?php foreach (explode("\n", $visi_misi[0]['misi']) as $misi): ?>
                 <li><?= $misi; ?></li>
             <?php endforeach; ?>

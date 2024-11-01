@@ -21,9 +21,9 @@
         <h4 style="margin-left: 1%; font-size: 20px; margin-top: 4px;">Guru dan Staff</h4>
     </div>
     <br>
-    <div class="imagepramuka">
+    <!-- <div class="imagepramuka">
         <img src="assets/image/paskib 4.jpg" alt="pramuka" class="pramuka-img" width="50%" style="margin-left: 25%;">
-    </div>
+    </div> -->
     <br>
     <div class="judulsambutan">
         <h2>Guru dan Staff</h2>

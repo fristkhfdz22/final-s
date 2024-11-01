@@ -9,7 +9,7 @@
 
             <?php if (!empty($pengumuman)): ?>
                 <?php foreach ($pengumuman as $item): ?>
-                    <b><a href=""><?php echo $item['judul']; ?></a></b>
+                    <b><a href="<?php echo site_url('errors/page_missing'); ?>"><?php echo $item['judul']; ?></a></b>
                     <br>
                 <?php endforeach; ?>
             <?php else: ?>
