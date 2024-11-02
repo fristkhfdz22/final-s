@@ -38,7 +38,7 @@
                         <a class="collapse-item" href="<?php echo base_url('pengumuman'); ?>">Pengumuman</a>
                         <a class="collapse-item" href="<?php echo base_url('prestasi'); ?>">prestasi</a>
                         <a class="collapse-item" href="<?php echo base_url('admin/infoppdb'); ?>">Info PPDB</a>
-                        <a class="collapse-item" href="<?php echo base_url('sejarah'); ?>">Sejarah</a>
+                        <a class="collapse-item" href="<?php echo base_url('admin/sejarah'); ?>">Sejarah</a>
                         <a class="collapse-item" href="<?php echo base_url('stats'); ?>">Rombel</a>
 
 

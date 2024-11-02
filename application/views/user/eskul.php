@@ -1,24 +1,3 @@
-<br>
-<br>
-<br>
-<br>
-<br>
-
-<!-- Ekstrakurikuler -->
-<style>
-    .card img {
-        height: 200px;
-        /* Tinggi tetap untuk gambar card */
-        object-fit: cover;
-        /* Mengatur gambar agar tidak terdistorsi */
-    }
-
-    .card {
-        cursor: pointer;
-        flex: 1;
-        /* Membuat card mengisi ruang yang tersedia */
-    }
-</style>
 <div class="judul" id="#jr" style="color: black;">
     <h1>Ekstrakurikuler</h1>
     <div class="underline"></div>
@@ -35,11 +14,11 @@
                     <?php foreach ($eskulItems as $eskul): ?>
                         <div class="col-4 p-2">
                             <div class="card">
-                                <img src="<?= base_url('uploads/ekstrakurikuler/' . $eskul['gambar']); ?>" class="card-img-top" alt="<?= $eskul['nama_ekstra']; ?>">
+                                <img src="<?= base_url('uploads/ekstrakurikuler/' . $eskul->gambar); ?>" class="card-img-top" alt="<?= $eskul->nama_ekstra; ?>">
                                 <div class="card-body">
-                                    <h4 class="card-title"><?= $eskul['nama_ekstra']; ?></h4>
-                                    <p><?= word_limiter($eskul['deskripsi'], 20); ?></p>
-                                    <a href="<?= base_url('ekstrakurikuler/detail/' . $eskul['id']); ?>" class="btn btn-primary">Read More</a>
+                                    <h4 class="card-title"><?= $eskul->nama_ekstra; ?></h4>
+                                    <p><?= word_limiter($eskul->deskripsi, 20); ?></p>
+                                    <a href="<?= base_url('ekstrakurikuler/detail/' . $eskul->id); ?>" class="btn btn-primary">Read More</a>
                                 </div>
                             </div>
                         </div>

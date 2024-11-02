@@ -40,22 +40,24 @@
             text-align: justify;
         }
     </style>
-
+<?php if ($jurusan): ?>
     <div class="imagekepalasekolah1" style="width: 300px; height: 300px;">
-        <img src="<?php echo base_url('uploads/jurusan/' . $jurusan['gambar']); ?>" alt="<?php echo $jurusan['nama']; ?>" class="kepalasekolah-img" width="300" height="300">
+        <img src="<?php echo base_url('uploads/jurusan/' . htmlspecialchars($jurusan->gambar)); ?>" alt="<?php echo htmlspecialchars($jurusan->nama); ?>" class="kepalasekolah-img" width="300" height="300">
     </div>
     <br>
     <div class="judulsambutan">
-        <h2><?php echo $jurusan['nama']; ?></h2>
+        <h2><?php echo htmlspecialchars($jurusan->nama); ?></h2>
         <div class="underline"></div>
     </div>
     <br>
     <div class="isisambutan">
-        <p><?php echo $jurusan['deskripsi']; ?></p>
+        <p><?php echo htmlspecialchars($jurusan->deskripsi); ?></p>
     </div>
     <br>
+    <?php endif; ?>
     <footer>
     </footer>
 </body>
 
 </html>
+

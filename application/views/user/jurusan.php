@@ -9,11 +9,11 @@
          <?php if (!empty($jurusan)): ?>
              <?php foreach ($jurusan as $item): ?>
                  <div class="card23">
-                     <img alt="Logo <?= $item['nama']; ?>" height="50" src="<?php echo base_url('uploads/jurusan/' . $item['logo']); ?>" width="50" />
+                     <img alt="Logo <?= $item->nama; ?>" height="50" src="<?php echo base_url('uploads/jurusan/' . $item->logo); ?>" width="50" />
                      <br>
                      <div class="text-container">
-                         <a href="<?php echo base_url('jurusan/detail/' . $item['id']); ?>" class="title"><?= $item['nama']; ?></a>
-                         <h6 class="subtitle"><?= $item['deskripsi']; ?></h6>
+                         <a href="<?php echo base_url('jurusan/detail/' . $item->id); ?>" class="title"><?= $item->nama; ?></a>
+                         <h6 class="subtitle"><?= $item->deskripsi; ?></h6>
                      </div>
                  </div>
              <?php endforeach; ?>

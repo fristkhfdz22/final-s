@@ -67,17 +67,18 @@ class Ekstrakurikuler extends CI_Controller
     public function edit($id)
     {
         $data['eskul'] = $this->Ekstrakurikuler_model->get_eskul_by_id($id);
-
+    
         if ($this->input->post()) {
             $logo = $this->_upload_file('logo', 'ekstrakurikuler');
             $gambar = $this->_upload_file('gambar', 'ekstrakurikuler');
-
+    
             $data_update = array(
                 'nama_ekstra' => $this->input->post('nama_ekstra'),
                 'deskripsi' => $this->input->post('deskripsi'),
                 'pembimbing' => $this->input->post('pembimbing'),
-                'logo' => $logo ?: $data['eskul']['logo'],
-                'gambar' => $gambar ?: $data['eskul']['gambar']
+                // Ganti akses array menjadi objek
+                'logo' => $logo ?: $data['eskul']->logo,
+                'gambar' => $gambar ?: $data['eskul']->gambar
             );
             $this->Ekstrakurikuler_model->update_eskul($id, $data_update);
             redirect('ekstrakurikuler');
@@ -88,6 +89,7 @@ class Ekstrakurikuler extends CI_Controller
             $this->load->view('admin/footer');
         }
     }
+    
 
     public function hapus($id)
     {

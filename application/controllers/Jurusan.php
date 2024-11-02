@@ -110,15 +110,23 @@ class Jurusan extends CI_Controller
     }
     public function detail($id)
     {
-        $data['jurusan'] = $this->Jurusan_model->get_jurusan($id);
-
+        $id = (int)$id;
+    
+        $data['jurusan'] = $this->Jurusan_model->get_jurusan_by_id($id);
+    
         if (!$data['jurusan']) {
-            show_404();
+            show_404(); // Tampilkan 404 jika data tidak ditemukan
         }
+    
+        // Ambil daftar jurusan untuk header
+        $data['jurusan_list'] = $this->Jurusan_model->get_all_jurusan(); // Misalnya fungsi get_all_jurusan() mengambil semua data jurusan
+    
         $this->load->view('user/header', $data);
         $this->load->view('user/jurusan/detail', $data);
         $this->load->view('user/footer');
     }
+    
+    
 
     private function _upload_file($field_name, $upload_path)
     {

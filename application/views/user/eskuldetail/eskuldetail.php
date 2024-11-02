@@ -22,21 +22,21 @@
     </div>
     <br>
     <div class="imagepmr">
-        <img src="<?= base_url('uploads/ekstrakurikuler/' . $eskul['gambar']); ?>" alt="<?= $eskul['nama_ekstra']; ?>" class="pmr-img" width="50%" style="margin-left: 25%;">
+        <img src="<?= base_url('uploads/ekstrakurikuler/' . $eskul->gambar); ?>" alt="<?= $eskul->nama_ekstra; ?>" class="pmr-img" width="50%" style="margin-left: 25%;">
     </div>
     <br>
     <div class="judulsambutan">
-        <h2><?= $eskul['nama_ekstra']; ?></h2>
+        <h2><?= $eskul->nama_ekstra; ?></h2>
         <div class="underline"></div>
     </div>
     <br>
     <div class="isisambutan">
-        <p><?= $eskul['deskripsi']; ?></p>
+        <p><?= $eskul->deskripsi; ?></p>
     </div>
     <br>
     <div class="containersambutankepalasekolah">
         <h4 style="margin-left: 1%; font-size: 20px; margin-top: 4px;">Dibimbing Oleh:</h4>
-        <p><?= $eskul['pembimbing']; ?></p>
+        <p><?= $eskul->pembimbing; ?></p>
     </div>
     <br>
     <br>

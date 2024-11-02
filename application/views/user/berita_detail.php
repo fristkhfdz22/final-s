@@ -14,12 +14,12 @@
     <br>
     <br>
     <br>
-    <div class="containersambutankepalasekolah">
+    <!-- <div class="containersambutankepalasekolah">
         <h4 class="home" style="font-size: 20px; margin-top: 4px;">Home</h4>
         <i class="fa fa-angle-right icon" style="font-size: 20px;"></i>
         <i class="fa fa-angle-right icon" style="font-size: 20px;"></i>
         <h4 style="margin-left: 1%; font-size: 20px; margin-top: 4px;">Berita</h4>
-    </div>
+    </div> -->
     <br>
 
     <div class="containerberita">
@@ -44,7 +44,7 @@
                     <ul>
                         <?php if (!empty($berita)): ?>
                             <?php foreach ($berita as $item): ?>
-                                <li><?= $item->judul; ?>
+                                <li><?= $item->judul; ?></li>
                                 <?php endforeach; ?>
                             <?php else: ?>
                                 <p class="text-center">Belum ada berita yang tersedia.</p>

@@ -51,10 +51,10 @@
                                     <li class="dropdown">
                                         <a class="dropdown-item" href="<?php echo base_url('kepsekdetail'); ?>">Sambutan Kepala Sekolah</a>
                                     </li>
-
-                                    <li><a class="dropdown-item" href="<?= base_url('sejarah-user'); ?>">Sejarah</a></li>
-                                    <li><a class="dropdown-item" href="<?= base_url('kritiksaran'); ?>">Kritik & Saran</a></li>
-                                    <li><a class="dropdown-item" href="<?= base_url('gurustaff/detail/'); ?>">Guru dan Staff</a></li>
+                                    <li><a class="dropdown-item" href="<?= base_url('visimisi'); ?>">Visi & Misi</a></li>
+                                    <li><a class="dropdown-item" href="<?= base_url('sejarah'); ?>">Sejarah</a></li>
+                                    <li><a class="dropdown-item" href="<?= base_url('saranaprasarana'); ?>">Sarana & Prasarana</a></li>
+                                    <li><a class="dropdown-item" href="<?= base_url('gurustaff/detail/'); ?>">Guru & Staff</a></li>
                                 </ul>
                         </li>
                         <li class="nav-item dropdown">
@@ -66,26 +66,43 @@
                                 <ul class="dropdown-menu" aria-labelledby="beritaDropdown">
                                     <li><a class="dropdown-item" href="<?php echo base_url('berita/detail_kedua'); ?>">Berita Terbaru</a></li>
                                     <li><a class="dropdown-item" href="<?= base_url('info_ppdb'); ?>">Info Sekolah</a></li>
+                                    <li><a class="dropdown-item" href="<?= base_url('galeri/view'); ?>">Galeri</a></li>
+
                                 </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <div class="tombol">
-                                <a class="nav-link " href="<?= base_url('saranaprasarana/view'); ?>" id="kompetensiDropdown" role="button"
-                                    style="color: black;">
-                                    SaranaPrasarana
-                                </a>
+    <div class="tombol">
+        <a class="nav-link dropdown-toggle" href="#" id="kompetensiDropdown" role="button"
+           data-bs-toggle="dropdown" aria-expanded="false" style="color: black;">
+            Kompetensi Keahlian
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="kompetensiDropdown">
+            <?php foreach (get_jurusan_list() as $j): ?>
+                <li><a class="dropdown-item" href="<?= base_url('jurusan/detail/' . $j->id); ?>"><?= htmlspecialchars($j->nama); ?></a></li>
+            <?php endforeach; ?>
+        </ul>
+    </div>
+</li>
+<li class="nav-item dropdown">
+    <div class="tombol">
+        <a class="nav-link dropdown-toggle" href="#" id="kompetensiDropdown" role="button"
+           data-bs-toggle="dropdown" aria-expanded="false" style="color: black;">
+            Kompetensi Keahlian
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="kompetensiDropdown">
+            <?php foreach (get_ekstrakurikuler_list() as $e): ?>
+                <li><a class="dropdown-item" href="<?= base_url('ekstrakurikuler/detail/' . $e->id); ?>"><?= htmlspecialchars($e->nama_ekstra); ?></a></li>
+            <?php endforeach; ?>
+        </ul>
+    </div>
+</li>
+  
 
-                        </li>
 
 
-                        <li class="nav-item">
-                            <div class="tombol">
-                                <a class="nav-link smooth-menu" href="<?= base_url('galeri/view'); ?>" style="color: black;">Galeri</a>
-                        </li>
-                        <li class="nav-item">
-                            <div class="tombol">
-                                <a class="nav-link smooth-menu" href="<?= base_url('kritiksaran'); ?>" style="color: black;">Kritik&saran</a>
-                        </li>
+
+
+
                         <li class="nav-item">
                             <div class="tombol">
                                 <a class="nav-link smooth-menu" href="<?= base_url('infoppdb/view'); ?>" style="color: black;">Info PPDB</a>

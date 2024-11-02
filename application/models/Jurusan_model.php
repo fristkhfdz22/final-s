@@ -8,16 +8,29 @@ class Jurusan_model extends CI_Model
     {
         parent::__construct();
     }
-
     public function get_all_jurusan()
     {
-        return $this->db->get('jurusan')->result_array();
+        $query = $this->db->get('jurusan'); // Misalkan 'jurusan' adalah nama tabel di database
+        return $query->result(); // Ini harus mengembalikan array objek
     }
-    public function get_by_id($id)
-    {
-        return $this->db->get_where('jurusan', ['id' => $id])->row();
-    }
+    
 
+    public function get_by_id($id) {
+        return $this->db->get_where('jurusan', ['id' => $id])->row(); // Mengembalikan satu baris data
+    }
+    public function get_jurusan_by_id($id)
+    {
+        $this->db->where('id', $id);
+        $query = $this->db->get('jurusan');
+    
+        // Cek hasil query
+        if ($query->num_rows() > 0) {
+            return $query->row();
+        } else {
+            return null;
+        }
+    }
+        
     public function create_jurusan($data)
     {
         $this->db->insert('jurusan', $data);

@@ -73,7 +73,8 @@
         </div>
         <br>
         <div class="isisambutan" style="color: white; font-size: 20px;">
-            <p><?= $item['konten']; ?></p>
+        <p><?= nl2br($item['konten']); ?></p>
+
         <?php endforeach; ?>
 
 

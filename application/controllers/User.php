@@ -17,6 +17,8 @@ class User extends CI_Controller
         $this->load->model('Kritiksaran_model');
         $this->load->model('Stats_model');
         $this->load->helper('text');
+        $this->load->helper('ekstrakurikuler'); // Load helper yang baru dibuat
+
     }
 
     public function index()
@@ -32,7 +34,6 @@ class User extends CI_Controller
         $data['kontak'] = $this->Kontak_model->get_all();
         $data['kritiksaran'] = $this->Kritiksaran_model->get_all();
         $data['stats'] = $this->Stats_model->get_latest();
-
 
 
 
