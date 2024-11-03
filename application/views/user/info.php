@@ -1,6 +1,6 @@
-<div class="info-container">
+<div class="info-container" >
 
-    <div class="pengumuman" id="pengumuman">
+    <div class="pengumuman" id="pengumuman" data-aos="fade-right">
         <h3 style="background-color: rgb(25, 25, 79); color: white; padding: 20px; border-radius: 5px; width: 90%; margin-right: 20%;">
             Pengumuman
         </h3>
@@ -20,7 +20,7 @@
         </div>
 
     </div>
-    <div class="sambutan">
+    <div class="sambutan" data-aos="fade-left">
         <h2 style="background-color: rgb(25, 25, 79); color: white; padding: 20px; border-radius: 5px; width: 100%;"><?= $kepalasekolah['judul']; ?></h2>
         <img src="<?= base_url('uploads/kepalasekolah/' . $kepalasekolah['foto']); ?>" alt="Kepala Sekolah" width="300" class="image-float">
         <p><?= $kepalasekolah['isisambutan']; ?></p>

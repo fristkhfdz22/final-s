@@ -19,7 +19,7 @@
 </div>
 <br>
 
-<div id="carouselExampleControls1" class="carousel slide" data-bs-ride="false">
+<div id="carouselExampleControls1" class="carousel slide" data-bs-ride="false" data-aos="fade-left">
     <div class="carousel-inner" id="prestasi">
         <?php if (!empty($prestasi) && is_array($prestasi)): ?>
             <?php $active = 'active'; ?>

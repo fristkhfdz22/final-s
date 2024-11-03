@@ -15,7 +15,7 @@
     <br>
     <br>
     <br>
-    <div class="containersambutankepalasekolah">
+    <div class="containersambutankepalasekolah" data-aos="zoom-in">
         <h4 class="home" style="font-size: 20px; margin-top: 4px;">Home</h4>
         <i class="fa fa-angle-right icon" style="font-size: 20px;"></i>
         <i class="fa fa-angle-right icon" style="font-size: 20px;"></i>
@@ -24,26 +24,26 @@
     <br>
     <div class="imagepmr">
         <?php if (!empty($prestasi->gambar)): ?>
-            <img src="<?= base_url('uploads/prestasi/' . $prestasi->gambar); ?>" alt="pmr" class="pmr-img" width="50%" style="margin-left: 25%;">
+            <img src="<?= base_url('uploads/prestasi/' . $prestasi->gambar); ?>" alt="pmr" class="pmr-img" width="50%" style="margin-left: 25%;" data-aos="zoom-in">
         <?php endif; ?>
     </div>
     <br>
-    <div class="judulsambutan">
+    <div class="judulsambutan" data-aos="zoom-in">
         <h2><?= $prestasi->judul; ?> </h2>
         <div class="underline"></div>
     </div>
     <br>
-    <div class="isisambutan">
+    <div class="isisambutan" data-aos="zoom-in">
         <?= $prestasi->deskripsi; ?>
     </div>
     <br>
-    <div class="containersambutankepalasekolah" style="display: flex; align-items: center;">
+    <div class="containersambutankepalasekolah" style="display: flex; align-items: center;" data-aos="zoom-in">
         <h4 style="margin-left: 1%; font-size: 20px; margin-top: 4px;">Tanggal</h4>
         <h4 style="font-size: 20px; margin-left: 5px;">:</h4>
         <h4 style="font-size: 20px; margin-left: 10px;"><?= $prestasi->tanggal; ?></h4>
     </div>
     <br>
-    <div class="containersambutankepalasekolah" style="display: flex; align-items: center; padding: 0 3%;">
+    <div class="containersambutankepalasekolah" style="display: flex; align-items: center; padding: 0 3%;" data-aos="zoom-in">
         <h4 style="font-size: 1.25rem; margin-top: 4px;"><i class="fas fa-user"></i></h4>
         <h4 style="font-size: 1.25rem; margin-left: 2rem;">:</h4>
         <h4 style="font-size: 1.25rem; margin-left: 1rem;"><?= $prestasi->penulis; ?></h4>

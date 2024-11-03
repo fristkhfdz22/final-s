@@ -15,26 +15,26 @@
     <br>
     <br>
     <br>
-    <div class="containersambutankepalasekolah">
+    <div class="containersambutankepalasekolah" data-aos="zoom-in">
         <h4 class="home" style="font-size: 20px; margin-top: 4px;">Home</h4>
         <i class="fa fa-angle-right icon" style="font-size: 20px;"></i>
         <h4 style="margin-left: 1%; font-size: 20px; margin-top: 4px;">Ekstrakurikuler</h4>
     </div>
     <br>
     <div class="imagepmr">
-        <img src="<?= base_url('uploads/ekstrakurikuler/' . $eskul->gambar); ?>" alt="<?= $eskul->nama_ekstra; ?>" class="pmr-img" width="50%" style="margin-left: 25%;">
+        <img src="<?= base_url('uploads/ekstrakurikuler/' . $eskul->gambar); ?>" alt="<?= $eskul->nama_ekstra; ?>" class="pmr-img" width="50%" style="margin-left: 25%;" data-aos="zoom-in">
     </div>
     <br>
-    <div class="judulsambutan">
+    <div class="judulsambutan" data-aos="zoom-in">
         <h2><?= $eskul->nama_ekstra; ?></h2>
         <div class="underline"></div>
     </div>
     <br>
-    <div class="isisambutan">
+    <div class="isisambutan" data-aos="zoom-in">
         <p><?= $eskul->deskripsi; ?></p>
     </div>
     <br>
-    <div class="containersambutankepalasekolah">
+    <div class="containersambutankepalasekolah" data-aos="zoom-in">
         <h4 style="margin-left: 1%; font-size: 20px; margin-top: 4px;">Dibimbing Oleh:</h4>
         <p><?= $eskul->pembimbing; ?></p>
     </div>

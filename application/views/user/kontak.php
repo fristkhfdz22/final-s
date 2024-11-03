@@ -7,12 +7,12 @@
             <div class="contact-wrapper">
             <?php if (isset($kontak) && !empty($kontak)): ?>
                 <?php foreach ($kontak as $k): ?>
-                    <div class="map">
+                    <div class="map" data-aos="fade-right">
                     <h3>Denah Lokasi</h3>
                     <iframe src="<?php echo $k->maps_url; ?>" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
 
-                <div class="contact-info">
+                <div class="contact-info" data-aos="fade-left">
                     <h3>Kontak</h3>
                   
                     <div class="contact-item">

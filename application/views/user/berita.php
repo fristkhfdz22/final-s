@@ -3,7 +3,7 @@
         <h1 class="text-center">Berita Terbaru</h1>
         <div class="underline"></div>
         <br>
-        <div class="row">
+        <div class="row"  data-aos="zoom-out-up">
             <?php foreach ($berita as $b) : ?>
                 <div class="col-md-4 mb-4">
                     <div class="card gray-bg">

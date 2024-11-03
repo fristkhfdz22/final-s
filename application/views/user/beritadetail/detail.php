@@ -10,7 +10,7 @@
 
 <body>
     <br><br><br><br>
-    <div class="containersambutankepalasekolah">
+    <div class="containersambutankepalasekolah" data-aos="zoom-in">
         <h4 class="home" style="font-size: 20px; margin-top: 4px;">Home</h4>
         <i class="fa fa-angle-right icon" style="font-size: 20px;"></i>
         <i class="fa fa-angle-right icon" style="font-size: 20px;"></i>
@@ -18,17 +18,17 @@
     </div>
 
     <div class="imagekepalasekolah1" style="margin-left: 17%; margin-top: 2%;">
-        <img src="<?= base_url('uploads/' . $berita->img); ?>" alt="Kepala Sekolah" class="kepalasekolah-img" style="width: 80%;" height="80%">
+        <img src="<?= base_url('uploads/' . $berita->img); ?>" alt="Kepala Sekolah" class="kepalasekolah-img" style="width: 80%;" height="80%" data-aos="zoom-in">
     </div>
     <br>
 
-    <div class="judulsambutan">
+    <div class="judulsambutan" data-aos="zoom-in">
         <h2 style="color: blue;"><?= $berita->judul; ?></h2>
         <div class="underline"></div>
     </div>
     <br>
 
-    <div class="isisambutan">
+    <div class="isisambutan" data-aos="zoom-in">
         <p><?= nl2br($berita->konten); ?></p>
     </div>
 

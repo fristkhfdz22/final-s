@@ -28,14 +28,21 @@
                 <h3>Search</h3>
                 <br>
                 <div class="search-boxberita">
-                    <input type="text" id="search-input" placeholder="Cari...">
-                    <button type="button" onclick="redirectTo404()">Search</button>
+                <input type="text" class="search-input" placeholder="Apa yang ingin anda cari?" id="searchQuery">
+                <button class="search-button" onclick="performSearch()">Cari</button>
                 </div>
                 <script>
-                    function redirectTo404() {
-                        window.location.href = "<?php echo site_url('errors/page_missing'); ?>";
-                    }
-                </script>
+function performSearch() {
+    var query = document.getElementById('searchQuery').value.trim(); // Ambil nilai pencarian
+    if (query) {
+        // Arahkan ke controller pencarian
+        window.location.href = "<?php echo site_url('search'); ?>?query=" + encodeURIComponent(query);
+    } else {
+        // Jika tidak ada query, arahkan ke halaman 404
+        window.location.href = "<?php echo site_url('errors/page_missing'); ?>";
+    }
+}
+</script>
             </div>
             <div class="containercategoryberita">
                 <h3>Archive</h3>

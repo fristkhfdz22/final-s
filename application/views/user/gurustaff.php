@@ -16,7 +16,7 @@
 </div>
 <br>
 
-<div id="carouselExampleControls2" class="carousel slide" data-bs-ride="false">
+<div id="carouselExampleControls2" class="carousel slide" data-bs-ride="false" data-aos="fade-right">
     <div class="carousel-inner" id="prestasi">
         <?php if (!empty($gurustaff)) : ?>
             <?php foreach ($gurustaff as $index => $staff) : ?>

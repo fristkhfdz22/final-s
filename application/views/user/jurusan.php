@@ -5,7 +5,7 @@
      </div>
      <div class="underline"></div>
      <br>
-     <div class="card-container23">
+     <div class="card-container23" data-aos="zoom-out-up">
          <?php if (!empty($jurusan)): ?>
              <?php foreach ($jurusan as $item): ?>
                  <div class="card23">

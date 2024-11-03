@@ -4,7 +4,7 @@
 </div>
 <br>
 
-<div id="carouselExampleControls" class="carousel slide" data-bs-ride="false">
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="false" data-aos="fade-right">
     <div class="carousel-inner">
         <?php
         $eskulChunks = array_chunk($ekstrakurikuler, 3);
