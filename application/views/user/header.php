@@ -72,32 +72,32 @@
                                 </ul>
                         </li>
                         <li class="nav-item dropdown">
-    <div class="tombol">
-        <a class="nav-link dropdown-toggle" href="#" id="kompetensiDropdown" role="button"
-           data-bs-toggle="dropdown" aria-expanded="false" style="color: black;">
-            Kompetensi Keahlian
-        </a>
-        <ul class="dropdown-menu" aria-labelledby="kompetensiDropdown">
-            <?php foreach (get_jurusan_list() as $j): ?>
-                <li><a class="dropdown-item" href="<?= base_url('jurusan/detail/' . $j->id); ?>"><?= htmlspecialchars($j->nama); ?></a></li>
-            <?php endforeach; ?>
-        </ul>
-    </div>
-</li>
-<li class="nav-item dropdown">
-    <div class="tombol">
-        <a class="nav-link dropdown-toggle" href="#" id="kompetensiDropdown" role="button"
-           data-bs-toggle="dropdown" aria-expanded="false" style="color: black;">
-            Kompetensi Keahlian
-        </a>
-        <ul class="dropdown-menu" aria-labelledby="kompetensiDropdown">
-            <?php foreach (get_ekstrakurikuler_list() as $e): ?>
-                <li><a class="dropdown-item" href="<?= base_url('ekstrakurikuler/detail/' . $e->id); ?>"><?= htmlspecialchars($e->nama_ekstra); ?></a></li>
-            <?php endforeach; ?>
-        </ul>
-    </div>
-</li>
-  
+                            <div class="tombol">
+                                <a class="nav-link dropdown-toggle" href="#" id="kompetensiDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false" style="color: black;">
+                                    Kompetensi Keahlian
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="kompetensiDropdown">
+                                    <?php foreach (get_jurusan_list() as $j): ?>
+                                        <li><a class="dropdown-item" href="<?= base_url('jurusan/detail/' . $j->id); ?>"><?= htmlspecialchars($j->nama); ?></a></li>
+                                    <?php endforeach; ?>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <div class="tombol">
+                                <a class="nav-link dropdown-toggle" href="#" id="kompetensiDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false" style="color: black;">
+                                    Ekstrakurikuler
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="kompetensiDropdown">
+                                    <?php foreach (get_ekstrakurikuler_list() as $e): ?>
+                                        <li><a class="dropdown-item" href="<?= base_url('ekstrakurikuler/detail/' . $e->id); ?>"><?= htmlspecialchars($e->nama_ekstra); ?></a></li>
+                                    <?php endforeach; ?>
+                                </ul>
+                            </div>
+                        </li>
+
 
 
 
