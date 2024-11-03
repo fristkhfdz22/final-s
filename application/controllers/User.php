@@ -47,8 +47,9 @@ class User extends CI_Controller
         $this->load->view('user/prestasi', $data);
         $this->load->view('user/gurustaff', $data);
         $this->load->view('user/kontak', $data);
-        $this->load->view('user/kritiksaran', $data);
         $this->load->view('user/rombel', $data);
+
+        $this->load->view('user/kritiksaran', $data);
         $this->load->view('user/footer', $data);
     }
 }

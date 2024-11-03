@@ -10,6 +10,6 @@ class Errors extends CI_Controller
         $this->output->set_status_header('404');
 
 
-        $this->load->view('custom_404');
+        $this->load->view('user/custom_404');
     }
 }

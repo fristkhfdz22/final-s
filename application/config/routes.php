@@ -127,6 +127,8 @@ $route['stats/edit/(:any)'] = 'stats/edit/$1';
 $route['stats/update/(:any)'] = 'stats/update/$1';
 $route['stats/delete/(:any)'] = 'stats/delete/$1';
 $route['404_override'] = 'errors/page_missing';
+$route['search'] = 'search/index'; // Route untuk pencarian
+
 
 
 
